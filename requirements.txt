@@ -1,0 +1,38 @@
+# ============================================================
+# 私人资料智能问答系统 — 依赖清单
+# ============================================================
+
+# --- Web UI ---
+streamlit>=1.28.0
+
+# --- LangChain 核心 ---
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+# langchain-openai>=0.1.0  # 已移除 — 改用 langchain_community ChatTongyi（DashScope 原生 API）
+langchain-chroma>=0.1.0
+langchain-text-splitters>=0.2.0
+langchain-classic>=0.3.0
+
+# --- 向量数据库 ---
+chromadb>=0.4.0
+
+# --- LLM & Embedding API ---
+dashscope>=1.17.0
+
+# --- 文档解析 ---
+pypdf>=3.0.0
+docx2txt>=0.8
+
+# --- 重排序模型（可选，仅 RERANK_ENABLED=True 时需要）---
+# HuggingFace CrossEncoder，依赖 sentence-transformers
+sentence-transformers>=2.2.0
+
+# --- 环境变量管理 ---
+python-dotenv>=1.0.0
+
+# --- 版本约束（避免兼容性问题）---
+protobuf>=3.20.0,<4
+
+# --- 非结构化文档解析（可选，增强 Markdown 加载）---
+# unstructured>=0.10.0

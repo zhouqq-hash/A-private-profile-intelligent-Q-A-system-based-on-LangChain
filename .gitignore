@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.venv/
+
+# 敏感文件
+.env
+
+# 向量数据库（持久化数据，每次运行重新生成）
+chroma_db/
+
+# 上传目录（用户数据，不提交）
+uploads/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
